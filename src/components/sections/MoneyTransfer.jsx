@@ -1,4 +1,5 @@
 import React from 'react'
+import Purplebutton from '../elements/PurpleButton'
 
 const MoneyTransfer = () => {
     return (
@@ -13,19 +14,14 @@ const MoneyTransfer = () => {
                         </div>
                         <div className="section-body">
                             <div className="checklist">
-                                <ul>
-                                    <li><i className="bi bi-check-circle"></i>Money</li>
-                                    <li><i className="bi bi-check-circle"></i>Transfer</li>
-                                    <li><i className="bi bi-check-circle"></i>Withdraw</li>
-                                </ul>
+                                <p><i className="bi bi-check-circle"></i>Money</p>
+                                <p><i className="bi bi-check-circle"></i>Transfer</p>
+                                <p><i className="bi bi-check-circle"></i>Withdraw</p>
                             </div>
 
 
                             <div className="learn-more-button">
-                                <button className="purple-button">
-                                    Learn more
-                                    <i className="bi bi-arrow-right"></i>
-                                </button>
+                                <Purplebutton text="Learn more" after="true" icon="bi bi-arrow-right" />
                             </div>
 
                         </div>
@@ -71,10 +67,7 @@ const MoneyTransfer = () => {
                     </div>
 
                     <div className="learn-more-button">
-                        <button className="purple-button">
-                            Learn more
-                            <i className="bi bi-arrow-right"></i>
-                        </button>
+                        <Purplebutton text="Learn more" after="true" icon="bi bi-arrow-right" />
                     </div>
 
                 </div>

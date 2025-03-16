@@ -162,26 +162,24 @@ ul {
     font-weight: 600;
     font-size: 14px;
     padding: 0;
-
-
     text-decoration: none;
     display: inline-block;
     border-radius: 4px;
     transition-duration: 0.4s;
-
     gap: 0.5rem;
-
     display: flex;
-
-
+    
     i {
         margin-left: 1px;
         color: #ffffff;
     }
 
-
     &:hover {
         background-color: violet;
+        color: var(--headline-color);
+        i {
+            color: var(--headline-color);
+        }
     }
 }
 
@@ -924,21 +922,17 @@ footer {
     padding: 4rem 0;
     display: none;
 
-
-
     .container {
         display: grid;
-        gap: 2rem;
+        column-gap: 2rem;
         row-gap: 8rem;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "column column";
-
 
         .column {
             display: flex;
             justify-content: center;
             align-items: center;
-
 
             .content {
                 width: 60%;
@@ -955,7 +949,6 @@ footer {
             color: var(--purple-button-color)
         }
 
-
         ul {
             li {}
         }
@@ -967,7 +960,7 @@ footer {
         padding: 0;
         list-style: none;
 
-        li {
+        p {
             display: flex;
             gap: 1rem;
             align-items: center;
@@ -976,8 +969,6 @@ footer {
             i {
                 color: var(--purple-button-color)
             }
-
-            p {}
         }
     }
 

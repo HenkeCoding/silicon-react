@@ -6,13 +6,30 @@ const SubscribeForm = () => {
     const [formData, setFormData] = useState({email: ''})
     
 
-    const handleChange = (e) => {
-        setFormData({ email: e.target.value})
+    const consoleMessage = (msg) => {
+        console.log(msg)
+    }
+
+    const setMessage = (msg) => {
+        
     }
 
 
-    const handleSubmit = async () => {
+    const handleChange = (e) => {
+        setFormData({ email: e.target.value})
+
+        consoleMessage('handleChange called')
+    }
+
+
+    const handleSubmit = async (e) => {
         e.preventDefault()
+
+        consoleMessage('handleSubmit called')
+        consoleMessage('formData: ' + formData.email)
+
+
+        
 
         if (!formData.email) {
             setMessage('Please enter your email')
@@ -20,9 +37,9 @@ const SubscribeForm = () => {
         }
 
         const res = await fetch(apiUri, {
-            methon: 'post',
+            method: 'post',
             headers: {
-                'content-type': 'application/json'
+                'Content-Type': 'application/json'
             },
             body: JSON.stringify(formData)
         })
@@ -38,7 +55,7 @@ const SubscribeForm = () => {
         <form onSubmit={handleSubmit}>
             <i className="bi bi-envelope"></i>
             <input type="email" placeholder="Your email" value={formData.email} onChange={handleChange} />
-            <button className="btn purple-button" type="submit">Subscribe</button>
+            <button className="btn purple-button" type="submit" onClick={handleSubmit}>Subscribe</button>
         </form>
     )
 }
