@@ -1409,7 +1409,8 @@ footer {
         background-color: var(--section-background-color);
         border-radius: 8px;
         display: grid;
-        grid-template-rows: auto auto;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
 
         justify-content: center;
         align-items: center;
@@ -1417,7 +1418,6 @@ footer {
         row-gap: 1rem;
         
         padding: 40px 0;
-
 
 
         @media(width >=768px) {
@@ -1433,7 +1433,6 @@ footer {
             
         }
     }
-
 
 
     .content-container {
@@ -1464,51 +1463,66 @@ footer {
         justify-content: center;
 
         form {
-            display: flex;
+            display: grid;
             margin-left: auto;
+            margin-right: auto;
+
+            grid-template-columns: 0 1fr auto;
+            grid-template-rows: auto 0;
+
+
+            input {
+                border-radius: 8px 0 0 8px;
+                border: solid var(--border-color);
+                border-width: 1px 0 1px 1px;
+                outline: none;
+                padding: 1rem 2rem;
+                font-size: 1em;
+                width: 100%;
+        
+            }
 
             i {
                 position: relative;
                 top: 18px;
-                left: 26px;
+                left: 12px;
             }
 
             .input-container {
                 position: relative;
             }
 
+
             .purple-button {
                 position: relative;
+                border-radius: 0 8px 8px 0;
+                border: none;
+                outline: none;
+                padding: 1rem 2rem;
+                font-size: 1em;
+                color: #ffffff;
+        
+            }
+        
+            .form-message{
+                width: 200px;
+
+                p{
+                    width: auto;
+                }
+            }
+        
+            .error-type{
+                color: red;
+            }
+        
+            .success-type{
+                color: green;
+            }
+        
+            .empty-type{
+                color: orange;
             }
         }
-
-    }
-
-
-
-}
-
-
-
-form {
-    input {
-        border-radius: 8px 0 0 8px;
-        border: solid var(--border-color);
-        border-width: 1px 0 1px 1px;
-        outline: none;
-        padding: 1rem 2rem;
-        font-size: 1em;
-        width: 100%;
-
-    }
-
-    .purple-button {
-        border-radius: 0 8px 8px 0;
-        border: none;
-        outline: none;
-        padding: 1rem 2rem;
-        font-size: 1em;
-        color: #ffffff;
-
     }
 }

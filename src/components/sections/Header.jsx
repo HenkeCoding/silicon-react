@@ -19,7 +19,7 @@ export const Header = () => {
                 <Logotype/>
                 <MainNavigation/>
                 <ToggleSwitch id="theme-switch" text="Dark Mode" currentState={darkMode} currentStateCallback={toggleDarkMode} />
-                <PurpleButton to="signin" text="Sign in / up" icon="bi bi-person" iconAfter="false" />
+                <PurpleButton url="/signin" text="Sign in / up" icon="bi bi-person" iconAfter="false" />
                 <HamburgerButton/>
             </div>
         </header>

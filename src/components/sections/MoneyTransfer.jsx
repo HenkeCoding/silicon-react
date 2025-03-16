@@ -21,7 +21,7 @@ const MoneyTransfer = () => {
 
 
                             <div className="learn-more-button">
-                                <Purplebutton text="Learn more" after="true" icon="bi bi-arrow-right" />
+                                <Purplebutton url="features" text="Learn more" after="true" icon="bi bi-arrow-right" />
                             </div>
 
                         </div>
@@ -67,7 +67,7 @@ const MoneyTransfer = () => {
                     </div>
 
                     <div className="learn-more-button">
-                        <Purplebutton text="Learn more" after="true" icon="bi bi-arrow-right" />
+                        <Purplebutton url="features" text="Learn more" after="true" icon="bi bi-arrow-right" />
                     </div>
 
                 </div>

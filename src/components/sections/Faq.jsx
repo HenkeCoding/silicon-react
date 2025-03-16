@@ -29,7 +29,7 @@ const Faq = () => {
 
 
                 <div className="contact-us-button">
-                    <PurpleButton text="Contact us now" />
+                    <PurpleButton url="contact" text="Contact us now" />
                 </div>
 
             </div>
