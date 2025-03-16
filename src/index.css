@@ -113,11 +113,6 @@ a {
 }
 
 
-ul {
-    padding: 0px;
-}
-
-
 .wrapper {
     height: 100dvh;
     display: grid;
@@ -1316,7 +1311,6 @@ footer {
                 }
             }
 
-
             .accordion-button {
                 background-color: var(--accordion-background-color);
                 
@@ -1356,17 +1350,9 @@ footer {
             .accordion-button:not(.collapsed) {
             }
 
-            .accordion-button:link,
-            .accordion-button:visited,
-            .accordion-button:hover,
-            .accordion-button:active {
-                box-shadow: 0px !important;
-            }
 
             .accordion-button:focus {
-                z-index: 3;
-                outline: 0;
-                box-shadow: 0 0 0 .1px var(--border-color) !important;
+                box-shadow: none !important;
             }
 
             .accordion-button:not(.collapsed)::after {
@@ -1480,7 +1466,7 @@ footer {
             input {
                 border-radius: 8px 0 0 8px;
                 border: solid var(--border-color);
-                border-width: 1px 0 1px 1px;
+                border-width: 2px 0 2px 2px;
                 outline: none;
                 padding: 1rem 2rem;
                 font-size: 1em;
@@ -1496,6 +1482,7 @@ footer {
                 position: relative;
                 top: 18px;
                 left: 12px;
+                color: rgb(35, 35, 35);
             }
 
             .input-container {
@@ -1516,6 +1503,8 @@ footer {
         
             .form-message{
                 width: 300px;
+                position: relative;
+                left: 10px;
 
                 p{
 
